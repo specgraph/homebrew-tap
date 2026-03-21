@@ -5,21 +5,21 @@
 class Specgraph < Formula
   desc "Live spec-driven development framework"
   homepage "https://specgraph.io"
-  version "0.1.5"
+  version "0.1.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/specgraph/specgraph/releases/download/v0.1.5/specgraph_0.1.5_darwin_amd64.tar.gz"
-      sha256 "d171ea9bd3d04d4eeea13749193f3d8f6197db7d170c29947253759ec43119a4"
+      url "https://github.com/specgraph/specgraph/releases/download/v0.1.6/specgraph_0.1.6_darwin_amd64.tar.gz"
+      sha256 "d81fd61e4a1e186fff383917dedbd3219b8b205f0f62790ae442222daf29590e"
 
       define_method(:install) do
         bin.install "specgraph"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/specgraph/specgraph/releases/download/v0.1.5/specgraph_0.1.5_darwin_arm64.tar.gz"
-      sha256 "1ca9cae9dad1532c15c1ef5ad7bb0361a203873ab87d3a35da1f92b8f8fcb765"
+      url "https://github.com/specgraph/specgraph/releases/download/v0.1.6/specgraph_0.1.6_darwin_arm64.tar.gz"
+      sha256 "84e5c6874485154db4f55ede99976621df3fc04791cbd0e960bce3c34e8b5f15"
 
       define_method(:install) do
         bin.install "specgraph"
@@ -29,15 +29,15 @@ class Specgraph < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/specgraph/specgraph/releases/download/v0.1.5/specgraph_0.1.5_linux_amd64.tar.gz"
-      sha256 "c17be43cc815d6c321c36d6e0b861491397dfc64fa6dea5589fa993064347280"
+      url "https://github.com/specgraph/specgraph/releases/download/v0.1.6/specgraph_0.1.6_linux_amd64.tar.gz"
+      sha256 "a90a483d2a9c98495095aac54a8fa6abbf394fccfa1f216b90f13e4735e47854"
       define_method(:install) do
         bin.install "specgraph"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/specgraph/specgraph/releases/download/v0.1.5/specgraph_0.1.5_linux_arm64.tar.gz"
-      sha256 "4391f62367cc32a9b97198806748f4fa79ec67c59443df0a28deb9e73b6ba3e5"
+      url "https://github.com/specgraph/specgraph/releases/download/v0.1.6/specgraph_0.1.6_linux_arm64.tar.gz"
+      sha256 "b1224655a15d69a74cff47a9a16d40c156a016bcb4ecf3844bf59d00afa46d1d"
       define_method(:install) do
         bin.install "specgraph"
       end
