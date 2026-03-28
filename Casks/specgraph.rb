@@ -3,7 +3,7 @@ cask "specgraph" do
   name "specgraph"
   desc "Live spec-driven development framework"
   homepage "https://specgraph.io"
-  version "0.3.3"
+  version "0.3.4"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "specgraph" do
   on_macos do
     on_intel do
       url "https://github.com/specgraph/specgraph/releases/download/v#{version}/specgraph_#{version}_darwin_amd64.tar.gz"
-      sha256 "7a44f1f9ccab80da2b1ffebd9440cd70465c5ed3b4caa11246b391125bfb331b"
+      sha256 "39c4a8af683d1537af339a75ab097641d11708ef5a17cf21b6513c2f47c05aca"
     end
     on_arm do
       url "https://github.com/specgraph/specgraph/releases/download/v#{version}/specgraph_#{version}_darwin_arm64.tar.gz"
-      sha256 "a22cc69c1a205dacb31470008a111ae16952a58649b69947e270dd17386b5987"
+      sha256 "1df5a0c06367edbb3479536184a9f0bbe1026be52f22f3666eccfdc1f44c4f30"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/specgraph/specgraph/releases/download/v#{version}/specgraph_#{version}_linux_amd64.tar.gz"
-      sha256 "e7b10784b3258a807b2321b562d14abaf83561fc2d84b8f384b0b8e8d968e79c"
+      sha256 "b2256ebc397b1738dd9333f01fd5b4dc5981937698997bb6200e29a1ba169d91"
     end
     on_arm do
       url "https://github.com/specgraph/specgraph/releases/download/v#{version}/specgraph_#{version}_linux_arm64.tar.gz"
-      sha256 "234c67f277d1f8f7f106d9ad3c1f3dd1f0511e8b01928fcc174e7d770a0f6759"
+      sha256 "93659db21f5f6595dc74f72c9c24b86fe96f10e3e9e9aa56f14de090bfe75e63"
     end
   end
 
